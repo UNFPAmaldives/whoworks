@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Who works in Maldives?</title>
+      <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+      <script src="d3.parsets.js" charset="utf-8"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+      <style type="text/css">
+          @import url(d3.parsets.css);
+          body {
+            font-family: FranklinITCProLight;
+            font-size: 16px;
+            width: 960px;
+            margin: 1em auto;
+            position: relative;
+          }
+          h1, h2, .dimension text {
+            text-align: center;
+            font-weight: 300;
+          }
+          h1 {
+            font-size: 4em;
+            margin: .5em 0 0 0;
+            font-family: "PostoniBold", Helvetica;
+
+          }
+          h2 {
+            font-size: 2em;
+            margin: 1em 0 0.5em;
+            border-bottom: solid #ccc 1px;
+            font-family: "FranklinITCProBold", Helvetica;
+
+          }
+          p.meta, p.footer {
+            font-size: 13px;
+            color: #333;
+          }
+          p.meta {
+            text-align: center;
+          }
+
+          text.icicle { pointer-events: none; }
+
+          .options { font-size: 12px; text-align: center; padding: 5px 0; }
+          .selection { font-size: 12px; text-align: center; padding: 5px 0; }
+          .curves { float: left; }
+          .source { float: right; }
+          pre, code { font-family: "Menlo", monospace; }
+
+          .html .value,
+          .javascript .string,
+          .javascript .regexp {
+            color: #756bb1;
+          }
+
+          .html .tag,
+          .css .tag,
+          .javascript .keyword {
+            color: #3182bd;
+          }
+
+          .comment {
+            color: #636363;
+          }
+
+          .html .doctype,
+          .javascript .number {
+            color: #31a354;
+          }
+
+          .html .attribute,
+          .css .attribute,
+          .javascript .class,
+          .javascript .special {
+            color: #e6550d;
+          }
+
+@font-face {
+    font-family: 'FranklinITCProLight';
+    src: url("http://mpop.xyz/fonts/Franklin/FranklinITCProLight.ttf");
+}
+@font-face {
+    font-family: 'FranklinITCProThin';
+    src: url("http://mpop.xyz/fonts/Franklin/FranklinITCProThin.ttf");
+}
+@font-face {
+    font-family: 'FranklinITCProBold';
+    src: url("http://mpop.xyz/fonts/Franklin/FranklinITCProBold.ttf");
+}
+@font-face {
+    font-family: 'PostoniBold';
+    src: url("http://mpop.xyz/fonts/postoni/PostoniBold.ttf");
+}
+@font-face {
+    font-family: 'PostoniDisplayRegularItalic';
+    src: url("http://mpop.xyz/fonts/postoni/PostoniDisplayRegularItalic.ttf");
+}
+@font-face {
+    font-family: 'PostoniDisplayRegular';
+    src: url("http://mpop.xyz/fonts/postoni/PostoniDisplayRegular.ttf");
+}
+@font-face {
+    font-family: 'PostoniTitlingRegular';
+    src: url("http://mpop.xyz/fonts/postoni/PostoniTitlingRegular.ttf");
+}
+@font-face {
+    font-family: 'postonititling-regular-webfont';
+    src: url("http://mpop.xyz/fonts/postoni/postonititling-regular-webfont.ttf");
+}
+@font-face {
+    font-family: 'PostoniDisplay';
+    src: url("http://mpop.xyz/fonts/postoni/PostoniDisplay.ttf");
+}
+@font-face {
+    font-family: PostoniStandardBold;
+    font-weight: bold;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniStandardBold.otf") format("opentype");
+}
+@font-face {
+    font-family: PostoniStandardBoldItalic;
+    font-weight: bold;
+    font-style: italic;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniStandardBoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: PostoniStandardItalic;
+    font-style: italic;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniStandardItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: PostoniStandardRegular;
+    font-weight: bold;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniStandardRegular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-weight: bold;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-weight: bold;
+    font-style: italic;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniBoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-style: italic;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-weight: normal;
+    font-style: normal;
+    src: url("http://mpop.xyz/fonts/postoni/PostoniRegular.otf") format("opentype");
+}
+          
+</style>
+  </head>
+
+
+
+<body>
+<h1>Got work?</h1>
+<p class="meta">Explore the Maldives' working-age population force. More expository text goes here.<br>
+<p class="meta">Drag, click, mouseover, and rearrange the bars and ribbons to learn more.<br>
+<p class="meta">This may take a moment to load.</p>
+
+</p><h2>Who works in Maldives, who doesn't, and why</h2>
+
+<div height="800px" style="float:left;">
+
+  <div class="drop" width="80%">
+
+  </div>
+      <div width="100%">
+        <div id="visDiv" style="float:left;" ></div>
+<div class="options">
+  <span class="source">Data: <a href="http://statisticsmaldives.gov.mv/census-2014/">2014 Maldives Census, NBS</a>.</span>
+       </div>
+</div>
+<br>
+
+  <form id="selection" style="float:right;">
+  </form>
+  <input style="float:left;" type="range" data-show-value="true" name="points" id="slider" value="75" min="50" max="100">Tension</input>
+
+    <script>
+      var data,vis,props,csv,bend;
+
+      var reload = function(dataURL){
+        d3.csv(dataURL,
+          function(dataset){
+            vis.loadData(dataset);
+            vis();
+
+        });
+      }
+      var drawVis = function(dat){
+        csv=dat;
+        props = [];
+        var selection = document.getElementById("selection");
+        var childButton = function(name){
+          var button = document.createElement("input");
+          var val = document.createElement("p");
+          button.type = "checkbox";
+          button.id = name;
+          button.value = name;
+          button.checked = true;
+          val.innerHTML = name;
+          val.appendChild(button);
+
+          return val;
+        }
+        selection.innerHTML ="";
+        for (var p in csv[0]){
+          props.push(p);
+          selection.appendChild(childButton(p));
+        }
+        data = csv;
+        chart = d3.parsets()
+        .dimensions(props)
+        .tension(.90);
+
+        vis = d3.select("#visDiv").append("svg")
+            .attr("width", chart.width())
+            .attr("height", chart.height());
+        vis.datum(csv).call(chart);
+      }
+      var update = function(){
+
+
+        chart = d3.parsets()
+        .dimensions(props)
+        .tension(bend);
+
+        if (arguments.length){
+          d3.select("#visDiv").html("");
+           vis = d3.select("#visDiv").append("svg")
+               .attr("width", chart.width())
+              .attr("height", chart.height());
+        }
+
+        vis.datum(csv).call(chart);
+      }
+
+      function handleFileSelect(evt){
+        var f;
+        var reader = new FileReader();
+          reader.onloadend = (function(file) {
+              return function(e) {
+                d3.select("#visDiv").html("");
+                //Should call d3.CSV and re-draw
+                console.log(" Uploaded the file");
+
+                d3.csv(e.target.result, function(error, storCSV) {
+                  csv=storCSV;
+                  drawVis(csv);
+                });
+
+              };
+            })(f);
+        if(evt.stopPropagation){
+          evt.stopPropagation();
+          evt.preventDefault();
+          f = evt.target.files[0];
+          reader.readAsDataURL(f);
+        }
+        else{
+          reader.onloadend(evt);
+        }
+
+
+
+
+    }
+        
+
+        var handleReload = function(evt){
+          evt.stopPropagation();
+          evt.preventDefault();
+          var b = props.length;
+          props = [];
+          $("input[type=range]").each(function(){
+            bend = this.value/100.0;
+          });
+
+
+          $("input[type=checkbox]:checked").each(function(){props.push(this.id)})
+          if(b==props.length){update();}
+          else{update(1)}
+
+        }
+
+
+
+       d3.csv("ResMal_keyvars.csv",drawVis);
+      document.getElementById('selection').addEventListener('change',handleReload,false);
+      document.getElementById('slider').addEventListener('change',handleReload,false);
+
+
+    </script>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

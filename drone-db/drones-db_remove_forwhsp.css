@@ -1,0 +1,706 @@
+/* Hacks to get rid of CLOUDS ad junk */
+.gray-eagle.dronename.label-wrapper {
+white-space: nowrap;    
+}
+
+@font-face {
+    font-family: 'FranklinITCProLight';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/FranklinITCProLight.ttf");
+}
+@font-face {
+    font-family: 'FranklinITCProThin';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/FranklinITCProThin.ttf");
+}
+@font-face {
+    font-family: 'FranklinITCProBold';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/FranklinITCProBold.ttf");
+}
+@font-face {
+    font-family: 'PostoniBold';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniBold.ttf");
+}
+@font-face {
+    font-family: 'PostoniDisplayRegularItalic';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniDisplayRegularItalic.ttf");
+}
+@font-face {
+    font-family: 'PostoniDisplayRegular';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniDisplayRegular.ttf");
+}
+@font-face {
+    font-family: 'PostoniTitlingRegular';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniTitlingRegular.ttf");
+}
+@font-face {
+    font-family: 'postonititling-regular-webfont';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/postonititling-regular-webfont.ttf");
+}
+@font-face {
+    font-family: 'PostoniDisplay';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniDisplay.ttf");
+}
+@font-face {
+    font-family: PostoniStandardBold;
+    font-weight: bold;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniStandardBold.otf") format("opentype");
+}
+@font-face {
+    font-family: PostoniStandardBoldItalic;
+    font-weight: bold;
+    font-style: italic;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniStandardBoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: PostoniStandardItalic;
+    font-style: italic;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniStandardItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: PostoniStandardRegular;
+    font-weight: bold;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniStandardRegular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-weight: bold;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-weight: bold;
+    font-style: italic;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniBoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-style: italic;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "Postoni";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/PostoniRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'unfpabold';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/unfpa/unfpa-bold-webfont.eot");
+}
+@font-face {
+    font-family: 'unfpasemibold';
+"    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/unfpa/unfpa-semibold-webfont.eot");
+}
+@font-face {
+    font-family: 'unfpatext';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/unfpa/unfpa-text-webfont.eot");
+}
+@font-face {
+    font-family: 'unfpasemibolditalic';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/unfpa/unfpa-semibolditalic-webfont.eot");
+}
+@font-face {
+    font-family: 'unfpatextitalic';
+    src: url("https://unfpamaldives.github.io/abuse/drone-db/fonts/unfpa/unfpa-textitalic-webfont.eot");
+}
+/*add to hed: 
+ <link href="http://db.onlinewebfonts.com/c/05fb50a4e818dff0dec7c1c5a59da24f?family=ElectraLTW01-Bold" rel="stylesheet" type="text/css"/>
+***then
+ #2 Using @import CSS directive, put the following line in add to your css file.@import url(http://db.onlinewebfonts.com/c/05fb50a4e818dff0dec7c1c5a59da24f?family=ElectraLTW01-Bold);
+ *****
+ #3 Use font-face declaration Fonts.@font-face {font-family: "ElectraLTW01-Bold";
+ src: url("http://db.onlinewebfonts.com/t/05fb50a4e818dff0dec7c1c5a59da24f.eot");
+ src: url("http://db.onlinewebfonts.com/t/05fb50a4e818dff0dec7c1c5a59da24f.eot?#iefix") format("embedded-opentype"),
+ url("http://db.onlinewebfonts.com/t/05fb50a4e818dff0dec7c1c5a59da24f.woff") format("woff"),
+ url("http://db.onlinewebfonts.com/t/05fb50a4e818dff0dec7c1c5a59da24f.ttf") format("truetype"),
+ url("http://db.onlinewebfonts.com/t/05fb50a4e818dff0dec7c1c5a59da24f.svg#ElectraLTW01-Bold") format("svg");
+ }
+*****/
+/* Font Awesome -i inserted this from sahifa's style.css, i think*/
+@font-face {
+    font-family: 'FontAwesome';
+    src:  url('https://unfpamaldives.github.io/abuse/drone-db/fonts/fontawesome-webfont.eot?v=4.5.0');
+    src:  url('https://unfpamaldives.github.io/abuse/drone-db/fonts/fontawesome-webfont.eot?') format('embedded-opentype'),
+    url('https://unfpamaldives.github.io/abuse/drone-db/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),
+    url('https://unfpamaldives.github.io/abuse/drone-db/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),
+    url('https://unfpamaldives.github.io/abuse/drone-db/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),
+    url('https://unfpamaldives.github.io/abuse/drone-db/fonts/fontawesome-webfont.svg?v=4.5.0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#main-container.container,
+#main-container .container {
+    border: none !important;
+    background: none !important;
+}
+.drones *, .drones *:before, .drones *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.drones .mb30 { margin-bottom: 30px; }
+.drones .mt30 { margin-top: 30px; }
+.drones h1.large {
+    font-size: 4.4em;
+}
+.drones h2,
+.drones h3 {
+    margin-bottom: 2px;
+}
+.drones h2.franklin, .drones h3.franklin, .drones h4.franklin, .drones h5.franklin {
+    font-family: 'FranklinITCProThin','Helvetica Neue', 'Helvetica-Neue', Helvetica,Arial,sans-serif;
+}
+.drones p.georgia { font-family: Georgia, serif; }
+.drones p.franklin { font-family: 'FranklinITCProLight','Helvetica Neue', 'Helvetica-Neue', Helvetica,Arial,sans-serif; }
+.drones p.large {
+    font-size: 1.1em;
+}
+.drones p.body.large {
+    font-size: 1.2em;
+}
+.drones p.body.large.georgia {
+    line-height: 1.7em;
+}
+.drones .x-marleft {
+    margin-left: 175px;
+}
+.drones .x-marright {
+    margin-right: 175px;
+}
+.drones .xx-marleft {
+    margin-left: 200px;
+}
+.drones .xx-marright {
+    margin-right: 60px;
+}
+.kicker {
+    margin-top: 20px;
+}
+.xx-marright-intro {
+    margin-right: 200px !important;
+}
+.drones .mobile-show,
+.drones .no-display,
+.drones .ie-only {
+    display: none;
+}
+.drones .intro-image {
+    margin-top: -30px;
+    margin-bottom: -50px;
+}
+.drones p.caps,
+.drones span.caps {
+    font-size: 16px;
+    line-height: 1em;
+    letter-spacing: .05em;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    color: #222;
+}
+.drones p.orange,
+.drones .orange {
+    color: #d44c51;
+}
+.gfx-row .left-col {
+    float: left;
+    width: 49%;
+}
+.gfx-row .right-col {
+    float: right;
+    width: 45%;
+}
+.gfx-row .left-col.posabs {
+    bottom: 0px;
+    left: 0px;
+}
+/* info panel */
+.info-panel {
+    background-color: #fefefe;
+    padding: 30px 175px 35px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: inset 0px 0px 5px #ccc;
+    -moz-box-shadow: inset 0px 0px 5px #ccc;
+    box-shadow: inset 0px 0px 5px #ccc;
+    display: none;
+}
+.info-panel p {
+    font-size: 1.15em;
+    line-height: 1.4em;
+}
+.info-panel a,
+.card-social a:hover {
+    color: #444;
+}
+.info-panel a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.info-panel .icon-remove {
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
+.info-nav {
+    top: 0px;
+    bottom: 0px;
+    padding: 20px 60px;
+    font-size: 50px;
+}
+.info-prev {
+    left: 0;
+}
+.info-next {
+    right: 0;
+}
+.info-nav i {
+    position: absolute;
+    top: 40%;
+}
+.info-prev i {
+    left: 30px;
+}
+.info-next i {
+    right: 30px;
+}
+.info-detail {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.info-panel .left-col {
+    max-width: 480px;
+    float: left;
+}
+.info-panel .right-col {
+    max-width: 300px;
+    float: right;
+}
+.card-social {
+    margin-bottom: 15px;
+    min-height: 22px;
+}
+.card-social a {
+    padding: 5px;
+    font-size: 1.3em;
+    color: #666;
+}
+/* map */
+#map {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#map path {
+    fill: #ccc;
+    stroke: #fff;
+}
+#map path.country.drone-location {
+    fill: #e06a51;
+    cursor: pointer;
+}
+#map path.country.drone-location:hover {
+    stroke: #222;
+}
+/* sankey-inspired chart */
+.sankey-wrapper .left-col {
+    width: 12%;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.sankey-wrapper .right-col {
+    width: 85%;
+    float: right;
+}
+.drones #drones-viz {
+    height: 600px;
+    }
+}
+.crash,
+.crash-path {
+    cursor: pointer;
+}
+.crash {
+    shape-rendering: crispEdges;
+    fill: #666;
+    stroke: white;
+}
+.crash-path {
+    fill: none;
+    stroke: #222;
+    stroke-width: 1px;
+    opacity: 0.4;
+}
+/* interaction classes */
+.has-interaction .crash,
+.has-interaction .crash-path {
+    opacity: 0.4;
+}
+.crash.highlighted,
+.crash-path.highlighted,
+.crash.clicked,
+.crash-path.clicked,
+.has-filter .crash.filtered,
+.has-filter .crash-path.filtered {
+    opacity: 1;
+}
+.crash.highlighted,
+.crash.clicked {
+    stroke: #666;
+    stroke-width: 2px;
+}
+.crash-path.highlighted,
+.crash-path.clicked {
+    stroke: #666;
+    stroke-width: 3px;
+}
+.has-filter .crash,
+.has-filter .crash-path {
+    opacity: 0.1;
+}
+/* COLORS: military service
+ .crash.air-force { fill: #AACBE0; background-color: #AACBE0; }
+ .crash.army { fill: #6B9B7A; background-color: #6B9B7A; }
+ .crash.navy { fill: #545797; background-color: #545797; }
+ .crash.marine-corps  { fill: #7E140A; background-color: #7E140A; }
+ 
+ .crash-path.air-force { stroke: #AACBE0; }
+ .crash-path.army { stroke: #6B9B7A; }
+ .crash-path.navy { stroke: #545797; }
+ .crash-path.marine-corps  { stroke: #7E140A; }
+ 
+ .label-wrapper.air-force { background-color: #C7DEEC; }
+ .label-wrapper.army { background-color: #9BC9A9; }
+ .label-wrapper.navy { background-color: #9A9CCE; }
+ .label-wrapper.marine-corps { background-color: #DAA09A; }*/
+/* COLORS: military service */
+.crash.female-0_4 { fill: #AACBE0; background-color: #AACBE0; }
+.crash.female-5_9 { fill: #6B9B7A; background-color: #6B9B7A; }
+.crash.female-10_14  { fill: #545797; background-color: #545797; }
+.crash.female-15_19  { fill: #7E140A; background-color: #7E140A; }
+.crash.female-20_24  { fill: #FFCC00; background-color: #FFCC00; }
+.crash.female-25_29  { fill: #CD853F; background-color: #CD853F; }
+.crash.female-30_34  { fill: #C1DAD6; background-color: #C1DAD6; }
+.crash.female-35_39  { fill: #e65c6c; background-color: #e65c6c; }
+
+
+.crash-path.female-0_4 { stroke: #AACBE0; }
+.crash-path.female-5_9 { stroke: #6B9B7A; }
+.crash-path.female-10_14  { stroke: #545797; }
+.crash-path.female-15_19  { stroke: #7E140A; }
+.crash-path.female-20_24  { stroke: #FFCC00; }
+.crash-path.female-25_29  { stroke: #CD853F; }
+.crash-path.female-30_34  { stroke: #C1DAD6; }
+.crash-path.female-35_39  { stroke: #e65c6c; }
+
+
+.label-wrapper.female-0_4 { background-color: #C7DEEC; }
+.label-wrapper.female-5_9 { background-color: #9BC9A9; }
+.label-wrapper.female-10_14 { background-color: #9A9CCE; }
+.label-wrapper.female-15_19 { background-color: #e65c6c; }
+.label-wrapper.female-20_24 { background-color: #FFCF75; }
+.label-wrapper.female-25_29 { background-color: #f5deb3; }
+.label-wrapper.female-30_34 { background-color: #98C5AB; }
+.label-wrapper.female-35_39 { background-color: #F28DCD; }
+
+
+.menu-wrapper {
+    position: absolute;
+    right: 0px;
+}
+.menu-wrapper select {
+    width: 100%;
+}
+.label-wrapper {
+    position: absolute;
+    cursor: default;
+}
+.label-wrapper.hide-label p.title {
+    visibility: hidden;
+    min-width: 140px;
+    text-align: left;
+}
+/*.label-wrapper.extended-family p.title {
+    margin-left: -300%;
+}
+.label-wrapper.teacher p.title {
+    margin-left: -350%;
+}
+.label-wrapper.marines p.title {
+    margin-left: -480%;
+}
+.label-wrapper.mother p.title {
+    margin-left: -400%;
+}*/
+.label-wrapper.hide-label:hover p.title {
+    visibility: visible;
+}
+.label-wrapper p,
+.menu-wrapper p {
+    line-height: 1em;
+}
+.label-wrapper.ownerservice {
+    padding: 10px 0px;
+}
+#drones-when {
+    position: relative;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#drones-when .chart-wrapper,
+.tm-col {
+    height: 260px;
+}
+
+#drones-when .tm-year > p { font-size: 12px; }
+
+.chart-label {
+    top: 25px;
+    bottom: 0px;
+    left: -200px;
+}
+/* ^ changed :
+ bottom: 0px;
+
+ */
+
+.tm-col {
+    float: left;
+    padding-right: 5px;
+    position: relative;
+}
+.tm-col:last-child {
+    padding-right: 0px;
+}
+.tm-year {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.tm-mishap-wrapper {
+    margin-bottom: 5px;
+}
+.tm-mishap {
+    display: block;
+    width: 7px;
+    height: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 1px auto;
+}
+.tm-mishap:hover {
+    border: 1px solid #888;
+}
+.tm-mishap.selected {
+    border: 1px solid #222;
+}
+.average-line {
+    border: 1px dashed #dcdcdc;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+.average-line > p {
+    background-color: white;
+    padding-right: 5px;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+}
+/* mobile v with tiny squares */
+.country-group {
+    width: 46%;
+    float: left;
+    margin-right: 2.5%;
+}
+.country-group p {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.country-group.iraq-group,
+.country-group.pakistan-group {
+    clear:both;
+}
+.crash-unit {
+    width: 12px;
+    height: 12px;
+    float: left;
+    background-color: #d44c51;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+.mobile-list .menu-wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+}
+.crash-list {
+    font-size: 1.1em;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.crash-incident {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.crash-incident:last-child {
+    border-bottom: none;
+}
+.crash-incident p.row-info {
+    margin-bottom: 0px;
+}
+.crash-incident .collapsed {
+    display: none;
+}
+.crash-incident.selected {
+    -wekbit-box-shadow: inset 0px 0px 5px #dadada;
+    -moz-box-shadow: inset 0px 0px 5px #dadada;
+    box-shadow: inset 0px 0px 5px #dadada;
+    background-color: #fcfcfc;
+}
+.crash-incident.selected p.row-info {
+    font-family: 'FranklinITCProBold', 'Helvetica-Neue', Helvetica, sans-serif;
+    font-size: 17px;
+}
+.crash-incident.selected .collapsed {
+    display: block;
+}
+/* tooltip styles */
+.label-wrapper p,
+.tm-col p,
+.menu-wrapper p,
+.wp-graphics-tooltip p {
+    margin-bottom: 2px;
+}
+.wp-graphics-tooltip {
+    max-width: 170px;
+}
+/* ie */
+.d3-ie .ie-only {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.d3-ie .ie-hide {
+    display: none;
+}
+@media(max-width:1200px){
+    .drones .x-marright {
+        margin-right: 20px;
+    }
+    .drones .x-marleft {
+        margin-left: 20px;
+    }
+    .drones .xx-marright {
+        margin-right: 60px;
+    }
+    .drones .xx-marleft {
+        margin-left: 60px;
+    }
+    .info-panel {
+        padding: 30px 105px 35px;
+    }
+    .info-panel .left-col {
+        width: 55%;
+    }
+    .info-panel .right-col {
+        width: 41%;
+    }
+}
+@media(max-width:979px){
+    .drones .x-marright,
+    .drones .x-marleft,
+    .drones .xx-marright,
+    .drones .xx-marleft,
+    .xx-marright-intro {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+}
+@media(max-width:767px){
+    .drones .mobile-show {
+        display: block;
+    }
+    .drones .mobile-hide {
+        display: none !important;
+    }
+    
+    .gfx-row .left-col {
+        width: 50%;
+    }    
+    .info-panel {
+        padding: 30px 80px 35px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .info-panel .left-col,
+    .info-panel .right-col {
+        float: none;
+        width: auto;
+        max-width: none;
+    }
+    .img-wrapper.num-1 img {
+        max-width: 400px;
+        width: 100%;
+    }
+    .img-wrapper.num-2 img {
+        width: 49%;
+        margin-right: 1%;
+    }
+    .img-wrapper.num-3 img {
+        width: 32.33333%;
+        margin-right: 1%;
+    }
+}
+@media(max-width:645px){
+    .gfx-row .left-col,
+    .gfx-row .right-col{
+        float: none;
+        width: 100%;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+}
+@media(max-width:630px){
+    .info-panel {
+        padding: 30px 50px 35px;
+    }
+    .info-nav {
+        padding: 20px 20px;
+        font-size: 30px;
+    }
+    .info-prev i {
+        left: 15px;
+    }
+    .info-next i {
+        right: 15px;
+    }
+}
+@media(max-width:490px){
+    .drones h1.large {
+        font-size: 3.5em;
+    }
+    .img-wrapper.num-1 img,
+    .img-wrapper.num-2 img,
+    .img-wrapper.num-3 img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .country-group {
+        width: 100%;
+        float: none;
+        margin-right: 0px;
+    }
+    .crash-incident.selected p.row-info {
+        font-size: 16px;
+    }
+}
